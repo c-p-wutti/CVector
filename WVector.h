@@ -16,3 +16,16 @@ void wv_print(w_vector *v){
 	}
 	printf("( %d ) \n", v->loe[i]);
 }
+
+//adding two vectors and returning the sum
+w_vector * wv_add(w_vector *ret, w_vector *v1, w_vector *v2){
+	int i;
+	ret->dim = v1->dim;
+	int loe2[ret->dim];
+	ret->loe = loe2; 
+
+	for(i=0; i < v1->dim; i++){
+		ret->loe[i] = v1->loe[i] + v2->loe[i];
+	}
+	return 	ret;
+}
