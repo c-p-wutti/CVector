@@ -12,12 +12,13 @@ int main() {
   v1.loe = array;
   v1.dim = 3;
 
-  v2.loe = array;
+  int array2[3]={3,2,1};
+  v2.loe = array2;
   v2.dim = 3;
 
-// wv_add(&ret, &v1, &v2);
+ wv_add(&ret, &v1, &v2);
 
- wv_print(&v1);
+ wv_print(&ret);
 
   printf("\n\n Program finished running! \n");
 }
