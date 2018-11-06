@@ -12,7 +12,7 @@ void wv_print(w_vector *v){
 	int i;
 	for(i=0; i < v->dim - 1; i++){
 		if(i==0) printf("( %d ) \n", v->loe[i]);
-		printf("| %d | \n", v->loe[i]);
+		else printf("| %d | \n", v->loe[i]);
 	}
 	printf("( %d ) \n", v->loe[i]);
 }

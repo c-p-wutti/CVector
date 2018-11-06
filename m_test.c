@@ -15,9 +15,9 @@ int main() {
   v2.loe = array;
   v2.dim = 3;
 
- wv_add(&ret, &v1, &v2);
+// wv_add(&ret, &v1, &v2);
 
- wv_print(&ret);
+ wv_print(&v1);
 
   printf("\n\n Program finished running! \n");
 }
