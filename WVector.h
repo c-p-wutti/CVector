@@ -38,7 +38,7 @@ w_vector *wv_subtract(w_vector *ret, w_vector *v1, w_vector *v2){
   for(i=0; i < v1->dim; i++){
    int a = v1->loe[i];
    int b = v2->loe[i];
-   ret->loe[i] = a + b;
+   ret->loe[i] = a - b;
   }
   return ret;
 }
