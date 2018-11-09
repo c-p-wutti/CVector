@@ -30,7 +30,7 @@ int main() {
 
  int ret2 = calcAddTest(v1, v2, sol, 3);
 
- testAdd();
+ //testAdd();
 
  printf("ret: %d", ret2);
 
@@ -53,8 +53,8 @@ void testAdd(){
   int a1[i];
   int a2[i];
    for(j=0; j<i; j++){
-    a1[j]=rand() % 15000;
-    a2[j]=rand() % 15000;
+    a1[j]=rand() % 500;
+    a2[j]=rand() % 500;
    }
   v1.loe = a1;
   v1.dim = i;
